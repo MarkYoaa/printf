@@ -6,7 +6,7 @@
 /*   By: mgelbart <mgelbart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 15:20:37 by mgelbart          #+#    #+#             */
-/*   Updated: 2021/12/14 15:41:03 by mgelbart         ###   ########.fr       */
+/*   Updated: 2021/12/14 15:45:38 by mgelbart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,5 @@ void	ft_putnbr(int num, int *count);
 void	ft_putunbr(unsigned int num, int *count);
 void	ft_smallhex(unsigned long num, int *count);
 void	ft_bighex(unsigned int num, int *count);
-
-
 
 #endif
