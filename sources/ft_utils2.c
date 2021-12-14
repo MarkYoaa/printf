@@ -6,7 +6,7 @@
 /*   By: mgelbart <mgelbart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 14:51:56 by mgelbart          #+#    #+#             */
-/*   Updated: 2021/12/13 15:04:12 by mgelbart         ###   ########.fr       */
+/*   Updated: 2021/12/14 15:40:15 by mgelbart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ void	ft_smallhex(unsigned long num, int *count)
 
 	s = "0123456789abcdef";
 	if (num < 16)
-	{
 		ft_putchar(s[num], count);
-	}
 	else
 	{
 		ft_smallhex(num / 16, count);
@@ -34,9 +32,7 @@ void	ft_bighex(unsigned int num, int *count)
 
 	s = "0123456789ABCDEF";
 	if (num < 16)
-	{
 		ft_putchar(s[num], count);
-	}
 	else
 	{
 		ft_bighex(num / 16, count);

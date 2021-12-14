@@ -6,7 +6,7 @@
 /*   By: mgelbart <mgelbart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/23 18:21:16 by mgelbart          #+#    #+#             */
-/*   Updated: 2021/12/12 17:21:37 by mgelbart         ###   ########.fr       */
+/*   Updated: 2021/12/14 15:40:05 by mgelbart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,28 +65,4 @@ void	ft_putunbr(unsigned int num, int *count)
 	tmp = num % 10 + '0';
 	write(1, &tmp, 1);
 	*count = *count + 1;
-}
-
-char	*ft_strrev(char *str)
-{
-	char	tmp;
-	int		i;
-	int		a;
-
-	i = 0;
-	a = 0;
-	while (str[a] != '\0')
-	{
-		a++;
-	}
-	a--;
-	while (a >= i)
-	{
-		tmp = str[i];
-		str[i] = str[a];
-		str[a] = tmp;
-		i++;
-		a--;
-	}
-	return (str);
 }
